@@ -3,6 +3,10 @@
 def main():
     data = []
     read_data(data)
+    
+    print("please set a learningrate: ", end='')
+    learning_rate = input()
+    
 
 def read_data(data):
     import csv
