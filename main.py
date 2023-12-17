@@ -15,7 +15,7 @@ def read_data(data):
         reader = csv.reader(fd)
         for row in reader:
             data.append(list(row))
-    #length_d = len(data)
+    
 
 if __name__ == '__main__':
     main()
