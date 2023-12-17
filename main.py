@@ -1,3 +1,4 @@
+from backpropagation import backpropagation
 
 def main():
     data = []
@@ -5,6 +6,7 @@ def main():
     
     print("please set a learningrate: ", end='')
     learning_rate = input()
+    backpropagation()
     
 
 def read_data(data):
