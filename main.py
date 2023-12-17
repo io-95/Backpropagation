@@ -3,10 +3,10 @@ from backpropagation import backpropagation
 def main():
     data = []
     read_data(data)
-    
+
     print("please set a learningrate: ", end='')
     learning_rate = input()
-    backpropagation()
+    backpropagation(data, learning_rate)
     
 
 def read_data(data):
@@ -15,7 +15,7 @@ def read_data(data):
         reader = csv.reader(fd)
         for row in reader:
             data.append(list(row))
-    
+
 
 if __name__ == '__main__':
     main()
