@@ -1,2 +1,2 @@
-def backpropagation():
-    print("hallo world")
+def backpropagation(data, learningrate):
+    pasdata, learningrates
