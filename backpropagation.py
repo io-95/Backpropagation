@@ -5,7 +5,7 @@ def backpropagation(data, learningrate):
     weight_layer_1 = []
     weight_layer_2 = []
     weight_layer_1, weight_layer_2 = initialize_weight(weight_layer_1, weight_layer_2)
-    
+
     neuron = [0, 0]
     y = 0
     quad_error = 0
@@ -17,7 +17,7 @@ def backpropagation(data, learningrate):
         neuron[1] = sigmoid(neuron[1])
         y = neuron[0] * weight_layer_2[0] + neuron[1] + weight_layer_2[1]
         quad_error = 0.5 * (data[i][2] - y) ** 2
-    
+
         # backpropagation
 
 
