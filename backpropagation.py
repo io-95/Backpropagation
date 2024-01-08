@@ -25,7 +25,7 @@ def backpropagation(data, learningrate):
 		weight_layer_2[1] = weight_layer_2[1] + learningrate * neuron[1] * (output *(1 - output) * (data[i][2] - output))
 
 def initialize_weight(weight_layyer1, weight_layer_2):
-	#initilize a list with 4 rows and 2 columns
+	#initilize a list with 2 rows and 2 columns
 	weight_layer_1 = [[0]*2]*2
 	weight_layer_2 = []
 
