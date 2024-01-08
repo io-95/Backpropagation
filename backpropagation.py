@@ -12,7 +12,7 @@ def backpropagation(data, learningrate):
     for i in range(len(data)):
         # forwardpropagation
         neuron[0] = data[i][0] * weight_layer_1[0][0] + data[i][1] * weight_layer_1[1][0]
-        neuron[1] = data[i][0] * weight_layer_1[0][1] + data[i][1] * weight_layer_1[1][1] 
+        neuron[1] = data[i][0] * weight_layer_1[0][1] + data[i][1] * weight_layer_1[1][1]
         neuron[0] = sigmoid(neuron[0])
         neuron[1] = sigmoid(neuron[1])
         y = neuron[0] * weight_layer_2[0] + neuron[1] + weight_layer_2[1]
